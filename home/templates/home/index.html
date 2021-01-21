@@ -1,400 +1,570 @@
 {%load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<!-- basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- mobile metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<!-- site metas -->
-<title>Corporal Medic</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">	
-<!-- bootstrap css -->
-
-<link rel="stylesheet" type="text/css" href="{% static 'home/css/bootstrap.min.css'%}">
-<!-- style css -->
-<link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css'%}">
-<!-- Responsive-->
-<link rel="stylesheet" href="{% static 'home/css/responsive.css'%}">
-<!-- Scrollbar Custom CSS -->
-<link rel="stylesheet" href="{% static 'home/css/jquery.mCustomScrollbar.min.css'%}">
-<!-- Tweaks for older IEs-->
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/home/css/font-awesome.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Corporal Medic</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="{% static 'home/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'home/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'home/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'home/vendor/icofont/icofont.min.css'%}" rel="stylesheet">
+  <link href="{% static 'home/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'home/vendor/venobox/venobox.css'%}" rel="stylesheet">
+  <link href="{% static 'home/vendor/animate.css'%}/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'home/vendor/remixicon/remixicon.css'%}" rel="stylesheet">
+  <link href="{% static 'home/vendor/owl.carousel/assets/owl.carousel.min.css'%}" rel="stylesheet">
+  <link href="{% static 'home/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css'%}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{% static 'home/css/style.css'%}" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: Medilab - v3.0.0
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-	<header id="home"class="section">
-	<div class="header_main">
-         <!-- header inner -->
-         <div class="header">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo"><a href="#home"><img src="{% static 'home/images/logo.jpg'%}" style="max-width: 100%;"></a> 
-                           </div>
-                        </div>
-                     </div>
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" style="	background-color:#00BE6C" class="d-none d-lg-flex align-items-center text-secondary topbar-scrolled">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info text-light" style="">
+        <i class="icofont-envelope" style="color:#6B61E0"></i> <a href="mailto:lis.teran@corporalmedic.com" class="text-light">lis.teran@corporalmedic.com</a>
+        <i class="icofont-phone" style="color:#6B61E0"></i> +593 962613995 <i class="icofont-google-map" style="color:#6B61E0"></i> Atahualpa y General Enríquez </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/corporalmedic" class="facebook" rel="noopener noreferrer" target="_blank"><i class="icofont-facebook" style="color:#6B61E0"></i></a>
+        <a href="https://www.instagram.com/corporalmedic/" class="instagram" rel="noopener noreferrer" target="_blank"><i class="icofont-instagram" style="color:#6B61E0"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-scrolled">
+    <div class="container align-items-center d-flex flex-row">
+      <div class="row">
+        <div class="col-md-12"><img class="img-fluid d-block w-50" src="{% static 'home/img/Corporal/Logo corporal medic grande.png'%}" style=""></div>
+      </div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="{% static 'home/img/logo.png'%}" alt="" class="img-fluid"></a>-->
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#departments">Tratamientos</a></li>
+          <li><a href="#doctors">Terapeutas</a></li>
+          <li><a href="#contact" style="">Contacto</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+      <a href="#appointment" class="appointment-btn scrollto" style="background-color:#6B61E0">Reservar Cita</a>
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center" style="	background-image: url(&quot;{% static 'home/img/principal.jpg'%}&quot;);	background-position: center;	background-size: 200;	background-repeat: repeat;">
+    <div class="container">
+      <h1 class="text-light">BIENVENIDOS A CORPORAL MEDIC</h1>
+      <h2 class="text-white">Tu cuerpo en mano de profesionales</h2>
+      <a href="#about" class="btn-get-started scrollto" style="background-color:#6B61E0">Comencemos</a>
+    </div>
+  </section><!-- End Hero -->
+  <main id="main">
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content" style="background-color:#6B61E0">
+              <h3 class="text-center">¿Por que acceder a nuestros servicios?</h3>
+              <p class="text-center"> Corporal Medic es un consultorio que presta atención en servicios de salud en terapia física y terapia respiratoria, su atención se caracteriza por la utilización de tecnología de punta y por la aplicación de tratamientos con evidencia científica. </p>
+              <div class="text-center">
+                <a class="more-btn">Aprender más <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="icofont-icu" style="color:#00BE6C"></i>
+                    <h4 class="py-5">Tecnología de punta</h4>
                   </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <div class="menu-area">
-                        <div class="limit-box">
-                           <nav class="main-menu">
-                              <ul class="menu-area-main">
-                                 <li><a href="#home">Inicio</a></li>
-                                 <li><a href="#about">Nosotros</a></li>
-                                 <li><a href="#service">Servicio</a></li>
-                                 <li><a href="#testimonial">Testimonios</a></li>
-                                 <li><a href="#contact">Contáctenos</a></li>
-                              </ul>
-                           </nav>
-                        </div>
-                     </div>
-                 </div>
-               </div>
-            </div>
-         </div>
-         <!-- end header inner -->
-      <section >
-      	<div class="bannen_inner">
-            <div class="container">
-                <div class="row marginii">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    	<div class="taital_main">
-                    		
-                    	</div>
-                        <h1 class="web_text"><strong>Fisioterapia Integral</strong></h1>
-                        <p class="donec_text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. 
-                           Aenean dignissim pellentesque felis.Donec nec justo
-                           eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-                         <a class="get_bg" href="#" role="button">Get Started</a>
-                         <a class="btn btn-lg btn-dark" href="about.html" role="button">Contact Us</a>
-                    </div>
-                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                 <div class="img-box">
-                    <figure><img src="{% static 'home/images/woofer.jpg'%}" alt="img"/ style="max-width: 100%;"></figure>
-                 </div>
-            </div>
-           </div>
-           <div class="emaim-bt">
-           	<div class="col-md-9 margin-0">
-            <div class="input-group mb-3 margin-top-20">
-                <input type="text" class="form-control" placeholder="Enter domain name here">
-            <div class="input-group-append">
-                <button class="search_bt" type="Subscribe"><a href="#">Search</a></button>  
-            </div>
-            </div>           
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="icofont-hospital" style="color:#00BE6C"></i>
+                    <h4 class="py-5" contenteditable="true">Ambiente confortable</h4>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="icofont-doctor" style="color:#00BE6C"></i>
+                    <h4 style="" class="py-5">Pesonal capacitado</h4>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
         </div>
-       </div>
-     </div>
+      </div>
+    </section><!-- End Why Us Section -->
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" style="	background-image: url({% static 'home/img/Corporal/8/ULTRASONIDO.jpg'%});	background-position: top left;	background-size: 100%;	background-repeat: repeat;"></div>
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>Nosotros</h3>
+            <p>Corporal Medic fisioterapia integral se caracteriza por brindarle a sus pacientes una atención de calidad con un ambiente agradable, por eso nos basamos en los siguientes principios.</p>
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-ui-check"></i></div>
+              <h4 class="title py-3"><a href="">C</a>onfiabilidad</h4>
+            </div>
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-crutch"></i></div>
+              <h4 class="title py-3"><a href="">T</a>ratamientos efectivos</h4>
+            </div>
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-ui-love-add"></i></div>
+              <h4 class="title py-3"><a href="">C</a>ompromiso</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+    <!-- ======= Counts Section ======= -->
+    <!-- End Counts Section -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2 contenteditable="true">Servicios</h2>
+          <p></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+            <div class="icon-box w-100" style="background-color:#00BE6C">
+              <div class="icon" style="background-color:#6B61E0"><i class="icofont-gym" style="color:#FFFFFF"></i></div>
+              <h4><a href="">Terapia Física</a></h4>
+              <p>Atención de alteraciones de origen osteo - muscular</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box w-100" style="background-color:#00BE6C">
+              <div class="icon" style="background-color:#6B61E0"><i class="icofont-lungs" style="color:#FFFFFF"></i></div>
+              <h4><a href="">Terapia respiratoria</a></h4>
+              <p>Atención de alteraciones de origen cardio- respiratorio</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 d-flex mt-4 mt-lg-0 text-center align-items-center">
+            <div class="icon-box justify-content-center align-items-center w-100" style="background-color:#00BE6C">
+              <div class="icon" style="background-color:#6B61E0"><i class="icofont-fast-delivery" style="color:#ffffff"></i></div>
+              <h4><a href="">Servicio a domicilio</a></h4>
+              <p>Atención desde la comodidad de su casa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Reserva una cita</h2>
+          <p>Para poder agendar tu cita con nosotros, por favor llenar el formulario que tenemos a continuación:</p>
+        </div>
+        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Por favor ibgrese un email válido">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Fecha" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="department" id="department" class="form-select">
+                <option value="">Seleccione un tratamiento</option>
+                <option value="Department 1">Terapia Física</option>
+                <option value="Department 2">Terapia respiratoria</option>
+                <option value="Department 3">Servicio a domicilo</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="doctor" id="doctor" class="form-select">
+                <option value="">Seleccione un terapeuta</option>
+                <option value="Doctor 1">Liseth Terán</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje (Opcional)"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Cargando</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Tu petición de cita a sido enviada. Gracias!</div>
+          </div>
+          <div class="text-center"><button type="submit" style="background-color:#6b61e0">Reservar cita</button></div>
+        </form>
+      </div>
+    </section><!-- End Appointment Section -->
+    <!-- ======= Departments Section ======= -->
+    <section id="departments" class="departments">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tratamientos</h2>
+          <p></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link show" data-bs-toggle="tab" href="#tab-1">Terapia traumatológica&nbsp;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Terapia neurológica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Terapia pre y post quirúrgica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Terapia deportiva</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#tab-5">Terapia respiratoria</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Terapia Traumatológica</h3>
+                    <p class="font-italic text-left">Aborda el diagnostico funcional de lesiones musculo-esqueléticas y su tratamiento fisioterapéutico más oportuno. Las lesiones traumáticas son las más comunes en la población al darse tanto en la actividad diaria, como en el ámbito deportivo, laboral o lesiones consecuencia de accidentes de todo tipo. Dentro de la fisioterapia traumatológica encontramos diversas patologías como el dolor crónico del sistema muscular, contracturas, luxaciones de las articulaciones, tendinitis, esguinces, fracturas, rotura de ligamentos, calcificaciones, prótesis, patología meniscal, artrosis, artritis, etc.</p>
+                  </div>
+                  <div class="col-lg-4 order-1 order-lg-2 text-justify">
+                    <img src="{% static 'home/img/Corporal/T TRAUMA.png'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Terapia Neurológica</h3>
+                    <p class="font-italic">Utiliza técnicas para tratar secuelas de lesiones del sistema nervioso central o periférico. El objetivo de los ejercicios (acordados entre el paciente, familiares y fisioterapeutas) es mejorar las capacidades físicas y las alteraciones estructurales y sensitivas para rehabilitar la capacidad y eficacia de los movimientos.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'home/img/Corporal/T NEURO.png'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Terapia pre y post-quirúrgica</h3>
+                    <p class="font-italic">La fisioterapia pre y post quirúrgica mejora la sintomatología y calidad de vida del paciente antes, durante y después de un proceso quirúrgico. Los tratamientos pre-quirúrgicos van encaminados a: preparar, fortalecer, movilizar y eliminar restricciones en los tejidos antes de la intervención para mejorar y acelerar el post operatorio. Los tratamientos post-quirúrgicos tienen la finalidad de recuperar la movilidad y fuerza de la zona afectada. Aquí trataremos: cicatrices, rigidez, derrame articular, rehabilitación tras cirugía de menisco, de ligamento, cartílago, rotura de tendón, prótesis, amputaciones en extremidades etc.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'home/img/Corporal/T PREPO.png'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Terapia Deportiva</h3>
+                    <p class="font-italic">Va dirigida a toda persona que practique deporte habitualmente, tanto si es un deporte de base, amateur, de salud, de élite o alto rendimiento. La fisioterapia deportiva consiste en hacer un trabajo preventivo y otro de recuperación de lesiones.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'home/img/Corporal/T DEPORTIVA.png'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane active" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Terapia Respiratoria</h3>
+                    <p class="font-italic">Es un conjunto de técnicas y procedimientos para el manejo de enfermedades respiratorias aplicables en adultos, pediátricos y neonatos, hospitalizados o ambulatorios, que al aplicarse coadyuvan al fortalecimiento y restauración de la función pulmonar.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'home/img/Corporal/TERAPIA RESPIRATORIA.png'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Departments Section -->
+    <!-- ======= Doctors Section ======= -->
+    <section id="doctors" class="doctors">
+      <div class="container">
+        <div class="section-title">
+          <h2>Terapeutas</h2>
+          <p></p>
+        </div>
+        <div class="row" style="">
+          <div class="col-lg-12 align-items-center pr-0">
+            <div class="member d-flex align-items-center" style="">
+              <div class="pic"><img src="{% static 'home/img/Corporal/Tolita.jpg'%}" class="img-fluid rounded-circle" alt=""></div>
+              <div class="member-info">
+                <h4 class="align-items-center">Liseth Terán</h4>
+                <span>Fisioterapeuta</span>
+                <p>Estudios realizados en la Escuela Colombiana de Rehabilitación.</p>
+                <div class="social">
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Doctors Section -->
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Preguntas frecuentes</h2>
+          <p></p>
+        </div>
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse collapsed" data-bs-target="#faq-list-1" aria-expanded="false">¿Cuál es el costo de cada sesión de terapia?<i class="bx bx-chevron-down icon-show" style=""></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list" style="">
+                <p> El costo de cada sesión de terapia física es de 10 USD y de terapia respiratoria 15 USD. </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed" aria-expanded="false">¿Cuánto tiempo dura cada sesión de fisioterapia? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list" style="">
+                <p> La sesión tiene una duración de 45 minutos a 1 hora dependiendo la gravedad del caso. </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="" aria-expanded="true">¿Qué incluye la terapia física? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse show" data-bs-parent=".faq-list" style="">
+                <p> Esta incluye la aplicación de equipos terapeuticos (Electro-estimulación, ultrasonido, laser, magneto, etc), realización de ejercicios terapéuticos, atención personalizada y retroalimentación permanente. </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">¿Qué incluye la terapia respiratoria? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p> La terapia respiratoria incluye máscara para nebulizar, medicamento y ejercicios respiratorios. </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="section-title">
+          <h2>Galería</h2>
+          <p></p>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'home/img/gallery/gallery-1.jpg'%}" class="venobox" data-gall="gallery-item">
+                <img src="{% static 'home/img/Corporal/8/_MG_3128.jpg'%}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'home/img/gallery/gallery-2.jpg'%}" class="venobox" data-gall="gallery-item">
+                <img src="{% static 'home/img/Corporal/8/CUPPING-1.jpg'%}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'home/img/gallery/gallery-3.jpg'%}" class="venobox" data-gall="gallery-item">
+                <img src="{% static 'home/img/Corporal/8/ELECTROESTIMULACIÓN-1.jpg'%}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'home/img/gallery/gallery-4.jpg'%}" class="venobox" data-gall="gallery-item">
+                <img src="{% static 'home/img/Corporal/8/ULTRASONIDO.jpg'%}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'home/img/gallery/gallery-5.jpg'%}" class="venobox" data-gall="gallery-item">
+                <img src="{% static 'home/img/Corporal/8/FOTOS CORPORAL MEDIC - FRACTURA.jpg'%}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'home/img/gallery/gallery-6.jpg'%}" class="venobox" data-gall="gallery-item">
+                <img src="{% static 'home/img/Corporal/8/EJERCICIO TERAPEUTICO.png'%}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'home/img/gallery/gallery-7.jpg'%}" class="venobox" data-gall="gallery-item">
+                <img src="{% static 'home/img/Corporal/8/TERAPIA RESPIRATORIA.png'%}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'home/img/gallery/gallery-8.jpg'%}" class="venobox" data-gall="gallery-item">
+                <img src="{% static 'home/img/Corporal/8/FOTOS CORPORAL MEDIC - FRACTURA7.jpg'%}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Gallery Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contacto</h2>
+        </div>
+      </div>
+      <div>
+        <iframe style="border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470.4562800366345!2d-78.21557130527708!3d0.32858978797902366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf52531c3232149eb!2sCorporal%20Medic!5e0!3m2!1ses!2sec!4v1610946511141!5m2!1ses!2sec" frameborder="0" allowfullscreen="" aria-hidden="false" height="350" tabindex="0" width="100%"></iframe>
+      </div>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Dirección:</h4>
+                <p>Atahualpa y General Enríquez</p>
+              </div>
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>E-mail:</h4>
+                <p>lis.teran@corporalmedic.com</p>
+              </div>
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>WhatsApp:</h4>
+                <p>+593 962613995</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                <div class="validate"></div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" style="background-color:#00BE6C">Enviar Mensaje</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 footer-contact">
+            <h3>Corporal Medic</h3>
+            <p> Atahualpa y General Enríquez<br> Atuntaqui<br> Ecuador<br><br><strong>WhatsApp:</strong> +593 962613995<br>
+              <strong>E-mail:</strong> lis.teran@corporalmedic.com<br>
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-4 footer-links">
+            <h4>Links directos</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Nosotros</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Servicios</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 footer-newsletter">
+            <h4>Únete a nuestra lista de contactos</h4>
+            <p>Déjanos tu E-mail</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Suscribirse" style="background-color:#00BE6C">
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    </section>
-	</header>
-    <!-- banner end -->
-    <!-- choose start -->
-    <div id="about" class="choose_section">
-    	<div class="container">
-    		<div class="col-sm-12">
-    			<h1 class="choose_text">Why you should <span class="color">choose us</span></h1>
-    			<p class="lorem_text">Making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover any web sites still</p>
-    		</div>
-    	</div>
+    <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright"> © Copyright <strong><span>CorporalMedic</span></strong>. All Rights Reserved </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://www.facebook.com/corporalmedic" class="facebook" rel="noopener noreferrer" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/corporalmedic/" class="instagram" rel="noopener noreferrer" target="_blank"><i class="bx bxl-instagram"></i></a>
+      </div>
     </div>
-    <div class="choose_section_2">
-    	<div class="container">
-    	    <div class="row">
-    		    <div class="col-sm-4">
-    			    <div class="power_full">
-    				    <div class="icon"><a href="#"><img src="{% static 'home/images/power-full-icon.png'%}"></a></div>
-    				    <h2 class="powerful_text">Powerful Features</h2>
-    				    <p class="making_tetx">making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
-    			    </div>
-    			    <div class="btn_main">
-    			        <button type="button" class="read_bt"><a href="#">Read More</a></button>
-    			    </div>
-    		    </div>
-    		    <div class="col-sm-4">
-    			    <div class="power">
-    				    <div class="icon"><a href="#"><img src="{% static 'home/images/optimised-icon.png'%}"></a></div>
-    				    <h2 class="totaly_text">Totaly Optimised</h2>
-    				    <p class="making">making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
-    			    </div>
-    			    <div class="btn_main">
-    			        <button type="button" class="read_bt"><a href="#">Read More</a></button>
-    			    </div>
-    		    </div>
-    		    <div class="col-sm-4">
-    			    <div class="power">
-    				    <div class="icon"><a href="#"><img src="{% static 'home/images/headfone-icon.png'%}"></a></div>
-    				    <h2 class="totaly_text">Worldwide Support</h2>
-    				    <p class="making">making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
-    			    </div>
-    			    <div class="btn_main">
-    			        <button type="button" role="button"  class="read_bt"><a href="#">Read More</a></button>
-    			    </div>
-    		    </div>
-    	    </div>    		
-    	</div>
-    </div>
-    <!-- choose start -->
-    <!-- about start -->
-    <div class="about_main layout_padding">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="images">
-    					<img src="{% static 'home/images/img-1.png'%}" style="max-width: 100%;">
-    				</div>
-    			</div>
-    			<div class="col-md-6">
-    				<div class="right_section_main">
-    					<h1 class="dolar_tetx"><strong style="color: #2ba879;">599.00* .com</strong></h1>
-    					<h2 class="special_text">Special Offer For Limited Time. 30% Discount On All Hosting Plans</h2>
-    					<p class="donec_text">making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
-    					<div class="right_aero"><img src="{% static 'home/images/right-aerow.png'%}"></div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-    <!-- about end -->
-    <!-- service start -->
-    <div id="service" class="choose_section">
-    	<div class="container">
-    		<div class="col-sm-12">
-    			<h1 class="choose_text">Nuestros<span class="color"> Servicios</span></h1>
-    			<p class="lorem_text">Corporal Medic es un consultorio de Fisioterapia integral el cual te ofrece servicios para:</p>
-    		</div>
-    	</div>
-    </div>
-    <div class="choose_section_2">
-    	<div class="container">
-    	    <div class="row">
-    		    <div class="col-sm-4">
-    			    <div class="about_inner">
-    				    <div class="icon"><a href="#"><img src="{% static 'home/images/icon-1.png'%}"></a></div>
-    				    <h2 class="totaly_text">Terapia respiratoria</h2>
-    				    <p class="making">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-    			    </div>
-    		    </div>
-    		    <div class="col-sm-4">
-    			    <div class="dedicated">
-    				    <div class="icon"><a href="#"><img src="{% static 'home/images/icon-2.png'%}"></a></div>
-    				    <h2 class="hosting_text">Terapia traumatológica</h2>
-    				    <p class="justo_text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-    			    </div>
-    		    </div>
-    		    <div class="col-sm-4">
-    			    <div class="about_inner">
-    				    <div class="icon"><a href="#"><img src="{% static 'home/images/icon-3.png'%}"></a></div>
-    				    <h2 class="totaly_text">Terapia deportiva</h2>
-    				    <p class="making">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-    			    </div>
-    		    </div>
-    	    </div>    		
-    	</div>
-    </div>
-
-    <div class="choose_section_2">
-    	<div class="container">
-    	    <div class="row">
-    		    <div class="col-sm-4">
-    			    <div class="about_inner">
-    				    <div class="icon"><a href="#"><img src="{% static 'home/images/icon-4.png'%}"></a></div>
-    				    <h2 class="totaly_text">Terapia neurológica</h2>
-    				    <p class="making">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-    			    </div>
-    		    </div>
-    		    <div class="col-sm-4">
-    			    <div class="about_inner">
-    				    <div class="icon"><a href="#"><img src="{% static 'home/images/icon-5.png'%}"></a></div>
-    				    <h2 class="totaly_text">Terapia pre y post quirúrgica</h2>
-    				    <p class="making">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-    			    </div>
-    		    </div>
-    		    <div class="col-sm-4">
-    			    <div class="about_inner">
-    				    <div class="icon"><a href="#"><img src="{% static 'home/images/icon-6.png'%}"></a></div>
-    				    <h2 class="totaly_text">Terapia geriátrica</h2>
-    				    <p class="making">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-    			    </div>
-    		    </div>
-    	    </div>
-    	    <div class="bt_main">
-    	    	<button class="read_more"><a href="#">Read More</a></button>
-            </div>   		
-    	</div>
-    </div>
-
-    <!-- service end -->
-    <!-- contact start -->
-    <div id="contact" class="contact_section">
-    	<div class="container">
-    		<div class="col-sm-12">
-    			<h1 class="choose_text">Request A Call  Back</h1>
-    			<p class="lorem_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-    		</div>
-    	</div>
-    </div>
-    <div class="contact_section_2">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="input_main">
-                       <div class="container">
-                          <form action="/action_page.php">
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Name" name="Name">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Email" name="Email">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Phone" name="Email">
-                            </div>
-                                <div class="form-group">
-                                  <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
-                                </div>
-                            </form>
-                          
-                       </div> 
-                       <div class="send_btn">
-                        <button type="button" class="main_bt"><a href="#">Send</a></button>
-                       </div>                   
-                    </div>
-    			</div>
-    			<div class="col-md-6">
-    				<div class="section_right">
-    					<img src="{% static 'home/images/img-2.png'%}" style="max-width: 100%;">
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-    <div class="contact_section_3">
-    	<div class="container">
-    		<div class="contact_taital">
-    			<div class="row web">
-    				<div class="col-sm-12 col-md-12 col-lg-4">
-    					<div class="map_main">
-    						<img src="{% static 'home/images/map-icon.png'%}">
-    						<span class="londan_text">Calle Atahualpa 11-56 y General Enriquez, Atuntaqui-Imbabura, Ecuador</span>
-    					</div>
-    				</div>
-    				<div class="col-sm-6 col-md-6 col-lg-4">
-    					<div class="map_main">
-    						<img src="{% static 'home/images/phone-icon.png'%}">
-    						<span class="londan_text">+593 96 261 3995</span>
-    					</div>
-    				</div>
-    				<div class="col-sm-6 col-md-6 col-lg-4">
-    					<div class="map_main">
-    						<img src="{% static 'home/images/email-icon.png'%}">
-    						<span class="londan_text">corporalmedicsa@gmail.com</span>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="contact_product">
-    			<div class="row">
-    				<div class="col-sm-6 col-md-6 col-lg-2">
-    					<div class="footer-logo"><img src="{% static 'home/images/footer-logo.png'%}" style="max-width: 100%;"></div>
-    				</div>
-    				<div class="col-sm-6 col-md-6 col-lg-4">
-    					<h1 class="useful_text">USEFUL LINK</h1>
-    				<div class="menu">
-    					<ul>
-    						<li><a href="#home"><img src="{% static 'home/images/bulit-icon.png'%}" style="padding-right: 10px;">Home</a></li>
-    						<li><a href="#about"><img src="{% static 'home/images/bulit-icon.png'%}" style="padding-right: 10px;">About</a></li>
-    						<li><a href="#service"><img src="{% static 'home/images/bulit-icon.png'%}" style="padding-right: 10px;">Services</a></li>
-    						<li><a href="#contact"><img src="{% static 'home/images/bulit-icon.png'%}" style="padding-right: 10px;">Contact Us</a></li>
-    					</ul>
-    				</div>	
-    				</div>
-    				<div class="col-sm-12 col-md-12 col-lg-6">
-    					<h1 class="useful_text">PRODUCT</h1>
-    					<div class="menu multi_column_menu">
-    					   <ul>
-    						  <li class="footer_menu"><a href="#"><img src="{% static 'home/images/bulit-icon.png'%}" class="footer_menu">Webhosting</a></li>
-    						  <li class="footer_menu"><a href="#"><img src="{% static 'home/images/bulit-icon.png'%}" class="footer_menu">Reseler Hosting</a></li>
-    						  <li class="footer_menu"><a href="#"><img src="{% static 'home/images/bulit-icon.png'%}" class="footer_menu">VPS Hosting</a></li>
-    						  <li class="footer_menu"><a href="#"><img src="{% static 'home/images/bulit-icon.png'%}" class="footer_menu">Wordpress Hosting</a></li>
-    						  <li class="footer_menu"><a href="#"><img src="{% static 'home/images/bulit-icon.png'%}" class="footer_menu">Dedicated hosting</a></li>
-    						  <li class="footer_menu"><a href="#"><img src="{% static 'home/images/bulit-icon.png'%}" class="footer_menu">Windows</a></li>
-    					   </ul>
-    				    </div>
-    				    <div class="input-group mb-3 margin-top-30">
-                           <input type="text" class="form-control" placeholder="Enter you email">
-                           <div class="input-group-append">
-                              <button class="subsrcibe_bt" type="Subscribe"><a href="#">SUBSCRIBE</a></button>  
-                           </div>
-                        </div>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="icon_main">
-    			<div class="row">
-    				<div class="col-sm-12">
-    					<div class="menu_text">
-    						<ul>
-    						   <li><a href="https://www.facebook.com/corporalmedic"><img src="{% static 'home/images/fb-icon.png'%}"></a></li>
-    						   <li><a href="#"><img src="{% static 'home/images/twitter-icon.png'%}"></a></li>
-    						   <li><a href="#"><img src="{% static 'home/images/in-icon.png'%}"></a></li>
-    						   <li><a href="#"><img src="{% static 'home/images/google-icon.png'%}"></a></li>
-    					    </ul>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-    <div class="copyright_main">
-    	<div class="container">
-    		<p class="copy_text">© 2018 All Rights Reserved. <a href="https://html.design">Free Website Templates</a></p>
-    	</div>
-    </div>
-
-
-    <!-- contact end -->
-    <!-- Javascript files-->
-    <script src="{% static 'home/js/jquery.min.js'%}"></script>
-    <script src="{% static 'home/js/popper.min.js'%}"></script>
-    <script src="{% static 'home/js/bootstrap.bundle.min.js'%}"></script>
-
-
-      <script src="{% static 'home/js/jquery-3.0.0.min.js'%}"></script>
-      <script src="{% static 'home/js/plugin.js'%}"></script>
-      <!-- sidebar -->
-      <script src="{% static 'home/js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
-      <script src="{% static 'home/js/custom.js'%}"></script>
-      <!-- javascript --> 
-      <script src="{% static 'home/js/owl.carousel.js'%}"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-      <script>
-         $(document).ready(function(){
-         $(".fancybox").fancybox({
-         openEffect: "none",
-         closeEffect: "none"
-         });
-         
-         $(".zoom").hover(function(){
-         
-         $(this).addClass('transition');
-         }, function(){
-         
-         $(this).removeClass('transition');
-         });
-         });
-         </script> 
- 
+  </footer><!-- End Footer -->
+  <a href="#" class="back-to-top" style="display: flex; opacity: 0.983459;"><i class="icofont-simple-up"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="{% static 'home/vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'home/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'home/vendor/jquery.easing/jquery.easing.min.js'%}"></script>
+  <script src="{% static 'home/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'home/vendor/venobox/venobox.min.js'%}"></script>
+  <script src="{% static 'home/vendor/waypoints/jquery.waypoints.min.js'%}"></script>
+  <script src="{% static 'home/vendor/counterup/counterup.min.js'%}"></script>
+  <script src="{% static 'home/vendor/owl.carousel/owl.carousel.min.js'%}"></script>
+  <script src="{% static 'home/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js'%}"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js'%}" style=""></script>
 </body>
+
 </html>
-
-
-

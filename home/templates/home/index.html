@@ -36,7 +36,7 @@
   <!-- ======= Top Bar ======= -->
   <div id="topbar" style="	background-color:#00BE6C" class="d-none d-lg-flex align-items-center text-secondary topbar-scrolled">
     <div class="container d-flex justify-content-between">
-      <div class="contact-info text-light" style="">
+      <div class="contact-info text-light">
         <i class="icofont-envelope" style="color:#6B61E0"></i> <a href="mailto:lis.teran@corporalmedic.com" class="text-light">lis.teran@corporalmedic.com</a>
         <i class="icofont-phone" style="color:#6B61E0"></i> +593 962613995 <i class="icofont-google-map" style="color:#6B61E0"></i> Atahualpa y General Enríquez </div>
       <div class="social-links">
@@ -49,7 +49,7 @@
   <header id="header" class="fixed-top header-scrolled">
     <div class="container align-items-center d-flex flex-row">
       <div class="row">
-        <div class="col-md-12"><img class="img-fluid d-block w-50" src="{% static 'home/img/Corporal/Logo corporal medic grande.png'%}" style=""></div>
+        <div class="col-md-12"><img class="img-fluid d-block w-50" src="{% static 'home/img/Corporal/Logo corporal medic grande.png'%}"></div>
       </div>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="{% static 'home/img/logo.png'%}" alt="" class="img-fluid"></a>-->
@@ -60,7 +60,7 @@
           <li><a href="#services">Servicios</a></li>
           <li><a href="#departments">Tratamientos</a></li>
           <li><a href="#doctors">Terapeutas</a></li>
-          <li><a href="#contact" style="">Contacto</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav><!-- .nav-menu -->
       <a href="#appointment" class="appointment-btn scrollto" style="background-color:#6B61E0">Reservar Cita</a>
@@ -106,7 +106,7 @@
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="icofont-doctor" style="color:#00BE6C"></i>
-                    <h4 style="" class="py-5">Pesonal capacitado</h4>
+                    <h4 class="py-5">Pesonal capacitado</h4>
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@
     <section id="about" class="about">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" style="	background-image: url({% static 'home/img/Corporal/8/ULTRASONIDO.jpg'%});	background-position: top left;	background-size: 100%;	background-repeat: repeat;"></div>
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" style="	background-image: url({static/home/img/Corporal/8/ULTRASONIDO.jpg});	background-position: top left;	background-size: 100%;	background-repeat: repeat;"></div>
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
             <h3>Nosotros</h3>
             <p>Corporal Medic fisioterapia integral se caracteriza por brindarle a sus pacientes una atención de calidad con un ambiente agradable, por eso nos basamos en los siguientes principios.</p>
@@ -326,9 +326,9 @@
           <h2>Terapeutas</h2>
           <p></p>
         </div>
-        <div class="row" style="">
+        <div class="row">
           <div class="col-lg-12 align-items-center pr-0">
-            <div class="member d-flex align-items-center" style="">
+            <div class="member d-flex align-items-center">
               <div class="pic"><img src="{% static 'home/img/Corporal/Tolita.jpg'%}" class="img-fluid rounded-circle" alt=""></div>
               <div class="member-info">
                 <h4 class="align-items-center">Liseth Terán</h4>
@@ -354,20 +354,20 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse collapsed" data-bs-target="#faq-list-1" aria-expanded="false">¿Cuál es el costo de cada sesión de terapia?<i class="bx bx-chevron-down icon-show" style=""></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list" style="">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse collapsed" data-bs-target="#faq-list-1" aria-expanded="false">¿Cuál es el costo de cada sesión de terapia?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
                 <p> El costo de cada sesión de terapia física es de 10 USD y de terapia respiratoria 15 USD. </p>
               </div>
             </li>
             <li data-aos="fade-up" data-aos-delay="100">
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed" aria-expanded="false">¿Cuánto tiempo dura cada sesión de fisioterapia? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list" style="">
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p> La sesión tiene una duración de 45 minutos a 1 hora dependiendo la gravedad del caso. </p>
               </div>
             </li>
             <li data-aos="fade-up" data-aos-delay="200">
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="" aria-expanded="true">¿Qué incluye la terapia física? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse show" data-bs-parent=".faq-list" style="">
+              <div id="faq-list-3" class="collapse show" data-bs-parent=".faq-list">
                 <p> Esta incluye la aplicación de equipos terapeuticos (Electro-estimulación, ultrasonido, laser, magneto, etc), realización de ejercicios terapéuticos, atención personalizada y retroalimentación permanente. </p>
               </div>
             </li>
@@ -407,8 +407,8 @@
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="{% static 'home/img/Corporal/8/ELECTROESTIMULACIÓN-1.jpg'%}" class="venobox" data-gall="gallery-item">
-                <img src="{% static 'home/img/Corporal/8/ELECTROESTIMULACIÓN-1.jpg'%}" loading="lazy" alt="" class="img-fluid">
+              <a href="{% static 'home/img/Corporal/8/ELECTROESTIMULACION-1.jpg'%}" class="venobox" data-gall="gallery-item">
+                <img src="{% static 'home/img/Corporal/8/ELECTROESTIMULACION-1.jpg'%}" loading="lazy" alt="" class="img-fluid">
               </a>
             </div>
           </div>
